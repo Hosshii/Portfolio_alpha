@@ -1,0 +1,27 @@
+type UserEdge implements Edge {
+  cursor: String
+  node: Node!
+}
+
+type RecordEdge implements Edge {
+  cursor: String
+  node: Node!
+}
+type EventEdge implements Edge {
+  cursor: String
+  node: Node!
+}
+type ProgressEdge implements Edge {
+  cursor: String
+  node: Node!
+}
+
+type ArticleEdge implements Edge {
+  cursor: String
+  node: Node!
+}
+
+type ProjectEdge implements Edge {
+  cursor: String
+  node: Node!
+}

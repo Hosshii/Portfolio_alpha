@@ -1,0 +1,11 @@
+type Query {
+  users: UserConnection
+  user: User
+  teams: [Team]
+  articles: ArticleConnection
+  article: Article
+  projects: ProjectConnection
+  project: Project
+  records: RecordConnection
+  record: Record
+}

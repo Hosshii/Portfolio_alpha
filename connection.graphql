@@ -1,0 +1,41 @@
+type UserConnection implements Connection {
+  edges: [UserEdge]
+  nodes: [User]
+  pageInfo: PageInfo!
+  totalCount: Int!
+}
+
+type RecordConnection implements Connection {
+  edges: [RecordEdge]
+  nodes: [Record]
+  pageInfo: PageInfo!
+  totalCount: Int!
+}
+
+type EventConnection implements Connection {
+  edges: [EventEdge]
+  nodes: [Event]
+  pageInfo: PageInfo!
+  totalCount: Int!
+}
+
+type ProgressConnection implements Connection {
+  edges: [ProgressEdge]
+  nodes: [Progress]
+  pageInfo: PageInfo!
+  totalCount: Int!
+}
+
+type ArticleConnection implements Connection {
+  edges: [ArticleEdge]
+  nodes: [Article]
+  pageInfo: PageInfo!
+  totalCount: Int!
+}
+
+type ProjectConnection implements Connection {
+  edges: [ProjectEdge]
+  nodes: [Project]
+  pageInfo: PageInfo!
+  totalCount: Int!
+}

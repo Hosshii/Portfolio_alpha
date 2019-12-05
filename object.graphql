@@ -1,0 +1,116 @@
+type Team {
+  id: ID!
+  name: String!
+  members: [UserConnection!]
+  record: [RecordConnection!]
+  event: [EventConnection!]
+}
+
+type Project {
+  id: ID!
+  name: String!
+  members: [UserConnection!]
+  date: Date
+  about: String
+  aboutHtml: HTML
+  progress: [ProgressConnection!]
+  hardSkill: [hardSkill]
+  calender: Calender
+}
+
+type Record {
+  id: ID!
+  name: String!
+  date: Date
+  about: String
+  aboutHtml: HTML
+}
+
+type Event {
+  id: ID!
+  name: String!
+  date: Date
+  about: String
+  aboutHtml: HTML
+}
+
+type Meeting {
+  id: ID!
+  name: String!
+  date: Date
+  about: String
+  aboutHtml: HTML
+  members: [UserConnection]
+  content: HTML
+}
+
+type User {
+  id: ID!
+  name: String!
+  project: [Project!]
+  team: [Team!]
+  gropus: [Group!]
+  record: [RecordConnection!]
+  creation: [Creation!]
+  article: [ArticleConnection!]
+  link: [Link!]
+}
+
+type PageInfo {
+  startCursor: String
+  endCursor: String
+  hasNextPage: Boolean!
+  hasPreviousPage: Boolean!
+}
+
+type Progress {
+  id: ID!
+  name: String!
+  about: String!
+}
+
+type Article {
+  id: ID!
+  name: String!
+  Author: String!
+  date: Date!
+  tag: Tag!
+  about: String!
+  aboutHtml: HTML!
+  content: String!
+  contentHtml: HTML!
+}
+
+type Calender {
+  start: Date!
+  end: Date!
+}
+
+type hardSkill {
+  id: ID!
+  name: String!
+  about: String!
+  type: String
+}
+
+type Group {
+  id: ID!
+  name: String!
+  members: [UserConnection]!
+}
+
+type Creation {
+  id: ID!
+  name: String!
+  belong: [User]!
+}
+
+type Link {
+  id: ID!
+  link: String!
+}
+
+type Tag {
+  id: String!
+  name: String!
+}
