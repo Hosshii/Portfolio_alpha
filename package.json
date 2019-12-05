@@ -1,0 +1,16 @@
+{
+  "name": "portfolio_alpha",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gql-lint": "graphql-schema-linter ./*.graphql"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "graphql-schema-linter": "^0.2.3",
+    "prettier": "^1.19.1"
+  }
+}
